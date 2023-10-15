@@ -15,6 +15,27 @@
 // let booleanIsLoggedIn = Boolean(isLoggedIn)
 // console.log(booleanIsLoggedIn)
 
-let no = 55
-let stringNo = String(no)
-console.log(typeof stringNo);
+// let no = 55
+// let stringNo = String(no)
+// console.log(typeof stringNo);
+
+
+let value = 3
+let negValue = -value
+console.log(negValue)
+
+
+let str1 = "Kiran"
+let str2 = " Manandhar"
+
+console.log(str1 + str2)
+console.log("1" + 2)
+console.log("1" + 2 + 2)
+console.log(1 + 2 + "2")
+
+let no1,no2,no3;
+no1 = no2 = no3 = 4
+
+let     counter = 100
+++counter;
+console.log(counter)
