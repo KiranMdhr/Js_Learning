@@ -32,3 +32,21 @@ const myFunction =function (){
 }
 
 console.log(typeof arr);
+
+
+//Stack(primitive) and Heap Memory(non-primitve)
+let myName = "kiranManandhar"
+let anotherName = "helloname"
+console.log(anotherName)
+console.log(myName)
+
+let user = {
+    email:"kiranmdhr9@gmail.com",
+    user:"username"
+}
+
+let userTwo = user
+
+userTwo.email = "user@gmail.com"
+console.log(user.email)
+console.log(userTwo.email)
