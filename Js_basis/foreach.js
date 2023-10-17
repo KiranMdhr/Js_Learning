@@ -28,5 +28,25 @@ const MyCoding =[
 ]
 
 MyCoding.forEach( (item) => {
-console.log(item.languageName);
+     console.log(item.languageName);
 })
+
+
+
+
+const nos =[1,2,64,54,98,5,456,1654]
+
+// const newnos = nos.filter( (num)=> {
+//     return  num > 64
+// }
+// )
+// console.log(newnos);
+
+
+const newnos =[]
+nos.forEach( (num) => {
+    if(num > 64){
+        newnos.push(nos)
+    }
+})
+console.log();
