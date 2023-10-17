@@ -35,3 +35,16 @@ const greet = "hello nepal"
 for (const i of greet) {
     console.log(i);
 }
+
+//Maps
+
+const map = new Map()
+map.set('dharan','nepal')
+map.set('lahore','pakistan')
+
+console.log(map);
+
+for (const [key,value] of map) {
+    console.log(key,':-',value);
+    
+}
