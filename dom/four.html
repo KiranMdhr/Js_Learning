@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: whitesmoke
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLang(lang){
+        const li = document.createElement("li")
+        li.innerHTML = `${lang}`;
+        document.querySelector(".language").appendChild(li)
+    }
+    addLang("REACT")
+
+    function addOptiLang(lang){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector(".language").appendChild(li)
+
+    }
+    addOptiLang("python")
+
+
+    function addLangg(newLang){
+           const myli = document.createElement('li')
+           myli.appendChild(document.createTextNode(newLang))
+           document.querySelector('.language').appendChild(myli)
+       }
+
+       addLangg("Django")
+
+
+       //  EDIT
+const secondLang = document.querySelector('li:nth-child(2)')
+//secondLang.innerHTML = "kiran"=> yesari gardani hunxa
+const newLi = document.createElement('li')
+newLi.textContent = "kiran"
+secondLang.replaceWith(newLi)
+
+// Another edit 
+
+const firstLang  =document.querySelector("li:first-child")
+firstLang.outerHTML = "<li>RUBY</li>"
+
+
+//Remove
+
+const lastLang = document.querySelector("li:last-child")
+lastLang.remove()
+</script>
+</html>
