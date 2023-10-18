@@ -1,0 +1,36 @@
+html {
+    margin: 0;
+  }
+  
+  span {
+    display: block;
+  }
+  .container{
+    text-align: center;
+    margin-top:14%;
+  }
+  button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+  }
+  
+  
+  
+  #black {
+    background: black;
+  }
+  #blue {
+    background: blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  #orange {
+    background: orange;
+  }
+  #purple {
+    background: purple;
+  }
+  
