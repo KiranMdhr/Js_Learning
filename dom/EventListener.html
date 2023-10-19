@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+    .div1,.div2{
+            background-color: green;
+            padding:20px 20px;
+            text-align: center;
+            margin-top:50px;
+        }
+        #myP2,#myP1{
+            background-color: white;
+            padding:20px 20px;
+            border:2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Add Event Listener</h1>
+    <div class="div1">
+        <h2>Bubbling</h2>
+        <p id ="myP1">Click Me</p>
+    </div>
+        <br>
+    <div class="div2">
+        <h2>Capturing</h2>
+        <p id ="myP2">Click Me</p>
+    </div>
+    <script>
+        document.getElementById('myP1').addEventListener('click',()=>{
+            alert("You clicked on the white Box")
+        })
+        document.getElementById('myP2').addEventListener('click',()=>{
+            alert("You clicked on the white Box")
+        })
+
+        document.querySelector('.div1').addEventListener('click',()=>{
+            alert("You clicked on green element")
+        })
+        document.querySelector('.div1').addEventListener('click',()=>{
+            alert("You clicked on green element")
+        })
+        document.querySelector('.div2').addEventListener('click',()=>{
+            alert("You clicked on green element")
+        })
+    </script>
+</body>
+</html>
